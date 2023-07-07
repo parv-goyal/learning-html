@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="icon" href="html-5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Learn About Tags</h1>
+        <ul>
+          <li>
+            <a href="#heading tag">Heading Tag</a>
+          </li>
+          <li>
+            <a href="#paragraph tag">Paragraph Tag</a>
+          </li>
+          <li>
+            <a href="#anchor tag">Anchor Tag</a>
+          </li>
+          <li>
+            <a href="#image tag">Image Tag</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <section id="heading tag">
+        <h1>heading tag</h1>
+        <pre> <code>&lt;h1&gt;H1&lt;h1&gt; </code> </pre>
+        <h1>hl heading</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <hr />
+      </section>
+      <section>
+        <h1>br and hr tag</h1>
+        <p>br tag for next line</p>
+        <p>hr tag for horizontal row</p>
+        <hr />
+      </section>
+
+      <section id="paragraph tag">
+        <h1>paragraph tag</h1>
+        <p>use <mark>Lorem300</mark> for 300 word peragraph in vs code</p>
+      </section>
+      <hr width="75%" />
+      <br />
+      <ol>
+        <li>this is peragraph text</li>
+        <li><strong>this is strong text</strong></li>
+        <li><b>this is bold text</b></li>
+        <li><em>this is emphasise text</em></li>
+        <li><i>this is italic text</i></li>
+      </ol>
+      <hr />
+
+      <section id="anchor tag">
+        <h1>anchor tag</h1>
+        <h3>Example of absolute link</h3>
+        <a href="https://chat.openai.com/" target="_main"
+          >Click here to go to ChatGPT
+        </a>
+        <h3>Example of relative link</h3>
+        <a href="/1stcode.html" target="_blank">Go to 1st code</a>
+      </section>
+      <hr />
+
+      <section id="image tag">
+        <h1>image tag</h1>
+        <p>click on image for more inages</p>
+        <a href="https://unsplash.com/" target="_blank">
+          <img
+            src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4B8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D"
+            title="unsplash.com"
+            width="121"
+          />
+        </a>
+        <br />
+        <hr />
+        <aside>
+          <details>
+            <summary>how lazy load works?</summary>
+            <p>
+              it will lode image only when it is needed like when we svroll down
+              the page
+            </p>
+          </details>
+          <figure>
+            <br />
+            <a href="https://unsplash.com/" target="_blank">
+              <img
+                src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4B8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D"
+                title="unsplash.com"
+                loading="lazy"
+                width="121"
+              />
+            </a>
+            <figcaption>lazy loading of image</figcaption>
+          </figure>
+        </aside>
+        <hr width="50%" align="left" />
+        <ul>
+          <li>
+            download a html
+            <a href="html-5.png" download>logo</a>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <h1>bold, italic, underline tag</h1>
+      <b>bold</b>
+      <br />
+      <i>italic</i>
+      <br />
+      <u>underline</u>
+      <br />
+      <hr />
+      <h1>subscript tag</h1>
+      <p>CO<sub>2</sub></p>
+      <hr />
+      <h1>superscript tag</h1>
+      <p>ax<sup>2</sup> + bx + c"</p>
+      <hr />
+      <h1>pre tag</h1>
+      <pre>
+        public static void main
+        ( String args )   
+        {  
+            int min = 200;  
+            int max = 400;  
+            //Generate random double value from 200 to 400   
+            
+            int b = (int)(Math.random()*(max-min+1)+min);  
+            System.out.println(b);  
+        }  </pre
+      >
+      <hr />
+      <h1>symbol for &lt;and &gt;</h1>
+      <p>&lt; with <mark> & l t ; </mark></p>
+      <p>&gt; with <mark>& g t ;</mark></p>
+      <hr />
+      <h2><abbr title="Parv Goyal">PG</abbr> is learning html</h2>
+      <hr />
+      <h1>to show time</h1>
+      <p>
+        <time datetime="08:00">8 am</time><br />
+        it will not affect in displaying the output of time but bots can read it
+      </p>
+      <hr />
+      <h1>table</h1>
+      <table>
+        <caption>
+          schedule
+        </caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th scope="col">time</th>
+            <th scope="col">work</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">morning</th>
+            <td><time datetime="08:00">8 am</time></td>
+            <td>wake up</td>
+          </tr>
+          <tr>
+            <th scope="row">morning</th>
+            <td><time datetime="09:00">9 am</time></td>
+            <td>breakfast</td>
+          </tr>
+          <tr>
+            <th scope="row">morning</th>
+            <td rowspan="2">time</td>
+            <td>other worl</td>
+          </tr>
+          <tr>
+            <th scope="row">night</th>
+            <td>sleep</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">done</td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr />
+      <article id="contact">
+        <h1>Form and Input</h1>
+        <h2>Contact Me</h2>
+        <form action="https://httpbin.org/get" method="get">
+        <p>
+          <label for="firstname">First Name:</label>
+          <input type="text" name="firstname" id="firstname" placeholder="Ashu" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="lastname">Last Name:</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Goyal" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="e-mail">E-mail:</label>
+          <input type="email" name="e-mail" id="e-mail" placeholder="xxx@yyy.zzz" autocomplete="on" required>
+        </p>
+        <!-- USE AUTOFOCUS FOR AUTOFOCUS ON PAGE -->
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" placeholder="********" required>
+        </p>
+        <p>
+          <label for="phone">Phone No.:</label>
+          <input type="tel" name="phone" id="phone" placeholder="1234567890" required pattern="[0-9]{10}">
+        </p>
+        <p>
+          <label for="decade">Birth Decade:</label>
+          <input type="number" name="decade" id="decade" placeholder="XXXX" min="1900" max="2020" step="10" value="1900" >
+        </p>
+        <p>
+          <label for="lastname">Favourite Coffee:</label>
+          <select name="coffee" id="coffee">
+            <option value="Hot">HOT</option>
+            <option value="Cold" selected>Cold</option>
+              <optgroup label="Caffeine Free">
+          </select>
+          </p>
+        </article>
+
+      <hr />
+      <hr />
+    </main>
+
+    <footer>
+      &copy;
+      <a href="https://github.com/parv-goyal" target="_blank">Parv-Goyal</a>.
+      <hr width="150" align="left" />
+      <nav>
+        <a href="#">back to top</a>
+      </nav>
+    </footer>
+  </body>
+</html>
